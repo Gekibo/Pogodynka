@@ -12,7 +12,7 @@ public class WeatherApiClient implements ApiClient {
     private static final String API_URL_HISTORICAL = "http://api.weatherstack.com/historical";
     private static final String URL_PARAMS = "?access_key=%s&query=%s";
     private static final String HISTORICAL_PARAM = "&historical_date=%s";
-    private static final String API_KEY = "b992a7e1ee0965000ee00774ce1b4f98";
+    private static final String API_KEY = "b84260ee91447cc14065de0aa3dd42d1";
     // Pamiętej, żeby zmienić API KEY na swój
 
     @Override
