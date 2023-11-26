@@ -1,0 +1,2 @@
+Forecast{id=a1a0fb19-0b8e-3a1a-b1af-2b4e47313e34, city='Warszawa', country='Poland', temperature=0, weatherDescription='Partly cloudy'}Forecast{id=a1a0fb19-0b8e-3a1a-b1af-2b4e47313e34, city='Warszawa', country='Poland', temperature=0, weatherDescription='Partly cloudy'}
+Forecast{id=99e1dec7-ae1d-3bff-a6dc-11454c2af2f5, city='Suwalki', country='Poland', temperature=-4, weatherDescription='Sunny'}
