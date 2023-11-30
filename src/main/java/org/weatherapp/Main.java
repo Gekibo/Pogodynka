@@ -27,8 +27,9 @@ public class Main {
 //        System.out.println(historicalForecast.body());
 //        userInput(weatherApiClient, weatherToForecastMapper);
 
-        fileWriter.writeToFile(userInput(weatherApiClient, weatherToForecastMapper));
+//        fileWriter.writeToFile(userInput(weatherApiClient, weatherToForecastMapper));
 
+        System.out.println(forecast.getWindDirection());
 
     }
 

@@ -1,2 +1,2 @@
-Forecast{id=a1a0fb19-0b8e-3a1a-b1af-2b4e47313e34, city='Warszawa', country='Poland', temperature=0, weatherDescription='Partly cloudy'}Forecast{id=a1a0fb19-0b8e-3a1a-b1af-2b4e47313e34, city='Warszawa', country='Poland', temperature=0, weatherDescription='Partly cloudy'}
-Forecast{id=99e1dec7-ae1d-3bff-a6dc-11454c2af2f5, city='Suwalki', country='Poland', temperature=-6, weatherDescription='Partly cloudy'}
+Forecast{id=abc6445d-3943-3857-9881-82b1ce2b565e, city='Gdynia', country='Poland', temperature=-4, weatherDescription='Light Snow', humidity=93, pressure=1003, windSpeed=13, windDirection='SSE'}
+Forecast{id=99e1dec7-ae1d-3bff-a6dc-11454c2af2f5, city='Suwalki', country='Poland', temperature=-6, weatherDescription='Partly cloudy', humidity=89, pressure=1007, windSpeed=10, windDirection='WNW'}
