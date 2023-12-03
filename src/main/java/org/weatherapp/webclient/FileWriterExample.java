@@ -7,31 +7,32 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class FileWriterExample {
+    final static String PATH = "src/main/resources/CurrentWeather.txt";
 
     public void writeToFile(Forecast forecast) {
         // Ścieżka do pliku, do którego chcesz zapisać dane
-        String filePath = "src/main/resources/CurrentWeather.txt";
+
 
         // Dane do zapisania
         String dataToWrite = forecast.toString();
 
         try {
             // Sprawdzenie, czy plik istnieje
-            if (!Files.exists(Paths.get(filePath))) {
+            if (!Files.exists(Paths.get(PATH))) {
                 // Jeżeli plik nie istnieje, to tworzymy nowy
-                Files.createFile(Paths.get(filePath));
+                Files.createFile(Paths.get(PATH));
             } else {
                 // Jeżeli plik istnieje, sprawdzamy, czy zawiera już dane dla danej lokalizacji
-                if (containsLocationData(filePath, forecast.getCity())) {
+                if (containsLocationData(PATH, forecast.getCity())) {
                     // Jeżeli zawiera, to zastępujemy nowymi danymi
-                    replaceLocationData(filePath, forecast.getCity(), dataToWrite);
+                    replaceLocationData(PATH, forecast.getCity(), dataToWrite);
                     System.out.println("Dane dla lokalizacji " + forecast.getCity() + " zostały zaktualizowane.");
                     return;
                 }
             }
 
             // Tworzenie obiektu BufferedWriter dla efektywnego zapisu
-            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(PATH, true));
 
             // Zapis danych do pliku
             writer.write(dataToWrite);

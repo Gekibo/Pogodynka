@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
+import static org.weatherapp.util.Util.userInput;
+
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         WeatherApiClient weatherApiClient = new WeatherApiClient();
@@ -27,21 +29,12 @@ public class Main {
 //        System.out.println(historicalForecast.body());
 //        userInput(weatherApiClient, weatherToForecastMapper);
 
-//        fileWriter.writeToFile(userInput(weatherApiClient, weatherToForecastMapper));
+        System.out.println();
+        fileWriter.writeToFile(userInput(weatherApiClient, weatherToForecastMapper));
 
-        System.out.println(forecast.getWindDirection());
+
 
     }
 
-    private static Forecast userInput(WeatherApiClient weatherApiClient, WeatherToForecastMapper weatherToForecastMapper) throws IOException, InterruptedException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj miasto: ");
-        String cityScanner = scanner.nextLine();
 
-        final HttpResponse<String> responseScanner = weatherApiClient.getWeather(String.valueOf(cityScanner));
-        Forecast forecastScanner = weatherToForecastMapper.mapToForecast(responseScanner.body());
-
-        System.out.println(forecastScanner.toString());
-        return forecastScanner;
-    }
 }
