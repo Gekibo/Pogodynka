@@ -9,9 +9,10 @@ import java.net.http.HttpResponse;
 public class WeatherApiClient implements ApiClient {
 
     private static final String API_URL = "http://api.weatherstack.com/current";
-    private static final String API_URL_HISTORICAL = "http://api.weatherstack.com/historical";
+    private static final String API_URL = "";
+
     private static final String URL_PARAMS = "?access_key=%s&query=%s";
-    private static final String HISTORICAL_PARAM = "&historical_date=%s";
+
     private static final String API_KEY = "b84260ee91447cc14065de0aa3dd42d1";
     // Pamiętej, żeby zmienić API KEY na swój
 
